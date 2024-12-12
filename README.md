@@ -8,7 +8,6 @@ This project is a **CRUD REST API** built with **NestJS**, as taught in the "Nes
 - **Authentication**: Implements user authentication using JSON Web Tokens (JWT).
 - **Database Integration**: Uses PostgreSQL as a relational database, managed with Prisma ORM.
 - **Validation**: Includes request validation using NestJS Pipes.
-- **Testing**: Covers unit testing, integration testing, and end-to-end testing.
 - **Docker Support**: Configured with Docker Compose for easy setup and deployment.
 - **Clean Architecture**: Modular design for maintainability and scalability.
 
@@ -85,7 +84,6 @@ npm run start:dev
 
 - **Start Development Server**: `yarn start:dev` or `npm run start:dev`
 - **Restart Database**: `yarn db:restart` or `npm run db:restart`
-- **Run Tests**: `yarn test` or `npm test`
 
 ## API Endpoints
 
@@ -95,19 +93,6 @@ npm run start:dev
 
 ### Users
 - **GET /users/me**: Get current user information.
-
-## Testing
-
-- **Unit Tests**: Tests individual modules and services.
-- **Integration Tests**: Tests interactions between multiple modules.
-- **End-to-End Tests**: Simulates real-world API usage scenarios.
-
-Run tests:
-```bash
-yarn test
-# or
-npm test
-```
 
 ## Contribution
 
