@@ -21,7 +21,6 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
         });
 
         delete user.hash;
-        console.log("validate: ", user);
         return user;
     }
 }
