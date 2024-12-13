@@ -17,4 +17,17 @@ export class UserService {
         delete user.hash;
         return user;
     }
+
+    async deleteUser(userId: number) {
+        await this.prisma.bookmark.deleteMany({
+            where: {
+                userId
+            }
+        });
+        return await this.prisma.user.delete({
+            where: {
+                id: userId
+            }
+        });
+    }
 }
